@@ -1,0 +1,81 @@
+body {
+    background-color: #09A6CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .register-text{
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+  }
+  .login-text{
+    color: rgb(43, 204, 129);
+  }
+  .terms{
+    color: rgb(255, 255, 255);
+  }
+  .login-box {
+    background-color: #068AB9;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  .toucan {
+    width: 200px;
+    height: 200px;
+    background: url('/assets/tucanlogin.png') no-repeat center center;
+    background-size: contain;
+    margin-top: 20px;
+    border-radius: 50%; /* Esto hace la imagen redonda */
+    display: block; /* Asegura que se comporte como un bloque */
+    margin-left: auto; /* Centra el div horizontalmente */
+    margin-right: auto; /* Centra el div horizontalmente */
+  }
+  
+ 
+  input {
+    width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  button {
+    width: 50%;
+    padding: 10px;
+    background-color: #44cc88;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .error {
+    color: rgb(228, 57, 51);
+  }
+  .eye-icon {
+    font-size: 24px;
+    color: rgb(13, 142, 165);
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 334px;
+    transform: translateX(-400%);
+    
+  }
+  .eye-icon:hover {
+    color: #44cc88; /* Color del ícono cuando se pasa el cursor */
+  }
+  
+  .eye-icon.visible {
+    color: #0c2c1c;
+  }

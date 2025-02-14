@@ -1,0 +1,151 @@
+.contenedor {
+
+  position: relative; /* Permite posicionar div2 sobre div1 */
+}
+
+.derecho{
+  width: 98%;
+  height: 940px;
+  background-color: rgb(23, 25, 26);
+  position: relative; /* Permite posicionar div2 dentro */
+}
+
+.total {
+  width: 100%;
+  height: 950px;
+  background-color: rgb(8, 39, 49);
+  position: relative; /* Base para superposición */
+}
+
+.izquierdo {
+  display: flex;
+  justify-content: space-between;
+  width: 328px;
+  height: 950px;
+  background-color: #0c1033;
+  
+
+}
+ /* Botones izquierda */
+
+ .card {
+  width: 180px;
+  height: 100px;
+  background-color: #0c1033;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos a la izquierda */
+  gap: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Botón "Crear curso" */
+.crear-curso {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.crear-curso .icono {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+/* Botón "Visualizar cursos" */
+.visualizar {
+  background-color: #2196F3;
+  color: white;
+  font-weight: bold;
+}
+
+/* Efecto hover (se oscurece al pasar el cursor) */
+.crear-curso:hover {
+  background-color: #388E3C; /* Verde más oscuro */
+}
+
+.visualizar:hover {
+  background-color: #1976D2; /* Azul más oscuro */
+}
+
+/* Efecto click (animación de escala) */
+.btn:active {
+  transform: scale(0.95);
+}
+/* Iconos del lado izquierdo*/
+/* Contenedor principal */
+/* Contenedor principal */
+.contenedor2 {
+  border-right: 2px solid rgb(255, 255, 255);
+  width: 100px;
+  height: 950px;
+  background-color:#0c1033;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  padding: 10px;
+}
+
+/* Tarjeta */
+.tarjeta {
+  width: 90px;
+  height: 80px;
+  background-color: #0c1033;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Contenedor de la imagen */
+.contenedor-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Imagen */
+.contenedor-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  
+}
+
+/* Contenedor del texto */
+.contenedor-texto {
+  width: 100%;
+  text-align: center;
+}
+
+/* Estilo del título */
+.contenedor-texto h3 {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Efecto hover */
+.tarjeta:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

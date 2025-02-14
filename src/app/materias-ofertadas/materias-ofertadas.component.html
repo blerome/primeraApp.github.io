@@ -1,0 +1,36 @@
+<div class="container">
+    <h1 class="title">📚 Materias Ofertadas</h1>
+  
+    <div class="card-container">
+      <mat-card *ngFor="let materia of materiasPaginadas" class="materia-card">
+        <div class="materia-header" [ngStyle]="{'background-color': materia.color}">
+          <h2>{{ materia.nombre }}</h2>
+        </div>
+  
+        <div class="card-content">
+          <!-- Imagen a la izquierda -->
+          <img [src]="materia.imagen" alt="{{materia.nombre}}" class="materia-imagen">
+  
+          <!-- Información a la derecha -->
+          <div class="materia-detalles">
+            <p><strong>Clave:</strong> {{ materia.clave }}</p>
+            <p><strong>Carrera:</strong> {{ materia.carrera }}</p>
+            <p><strong>Horario Propuesto:</strong> {{ materia.horario }}</p>
+  
+            <!-- Botones alineados abajo a la derecha -->
+            <div class="materia-buttons">
+              <button mat-button class="btn-ver"> Ver más</button>
+              <button mat-button class="btn-inscribir"> Solicitar inscripción</button>
+              <button mat-button class="btn-whatsapp"> WhatsApp</button>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  
+    <div class="pagination">
+      <button mat-button (click)="anteriorPagina()" [disabled]="paginaActual === 0">⬅ Anterior</button>
+      <button mat-button (click)="siguientePagina()" [disabled]="(paginaActual + 1) * itemsPorPagina >= materias.length">Siguiente ➡</button>
+    </div>
+  </div>
+  
