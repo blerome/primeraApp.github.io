@@ -1,0 +1,55 @@
+.contenedor {
+    top: 0;
+    width: 1518px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 8px;
+  }
+  
+  .izquierdo, .derecho {
+    width: 464px; /* Mantiene el balance de la barra */
+    display: flex;
+    align-items: center;
+  }
+  
+  .centro {
+    flex-grow: 1; /* Permite que la barra de búsqueda se mantenga centrada */
+    max-width: 464px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .centro input {
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .lupa {
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+    pointer-events: none;
+    color: #555;
+  }
+  
+  .derecho {
+    justify-content: flex-end; /* Asegura que los íconos se alineen a la derecha */
+    gap: 8px;
+  }
+  
+  .icono {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  
