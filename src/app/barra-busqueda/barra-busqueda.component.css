@@ -1,55 +1,63 @@
 .contenedor {
-    top: 0;
-    width: 1518px;
-    height: 56px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 8px;
-  }
-  
-  .izquierdo, .derecho {
-    width: 464px; /* Mantiene el balance de la barra */
-    display: flex;
-    align-items: center;
-  }
-  
-  .centro {
-    flex-grow: 1; /* Permite que la barra de búsqueda se mantenga centrada */
-    max-width: 464px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-  }
-  
-  .centro input {
-    width: 100%;
-    height: 40px;
-    padding-left: 40px;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .lupa {
-    position: absolute;
-    left: 10px;
-    font-size: 18px;
-    pointer-events: none;
-    color: #555;
-  }
-  
-  .derecho {
-    justify-content: flex-end; /* Asegura que los íconos se alineen a la derecha */
-    gap: 8px;
-  }
-  
-  .icono {
-    width: 40px;
-    height: 40px;
-    background-color: #ccc;
-    border-radius: 5px;
-  }
-  
+  width: 100%; /* Se mantiene dentro del ancho de 'derecho' */
+  height: 56px;
+  position: absolute;
+   /* Se alinea dentro de 'derecho' */
+  display: flex; /* Para distribuir los elementos correctamente */
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 0 16px; /* Espaciado interno sin aumentar el tamaño */
+  box-sizing: border-box; /* Evita que el padding haga crecer el contenedor */
+  overflow: hidden; /* Previene cualquier desbordamiento */
+}
+
+.izquierdo {
+  width: 25%; /* Ocupa el 25% del ancho total */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 150px; /* Se asegura de no ser demasiado pequeño */
+}
+
+.centro {
+  flex-grow: 1; /* Se expande sin desbordar */
+  max-width: 50%; /* Máximo 50% del ancho */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.centro input {
+  width: 100%;
+  height: 40px;
+  padding-left: 40px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.lupa {
+  position: absolute;
+  left: 10px;
+  font-size: 18px;
+  pointer-events: none;
+  color: #555;
+}
+
+.derecho {
+  width: 25%; /* Ocupa el 25% del ancho total */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 150px; /* Se asegura de no ser demasiado pequeño */
+  gap: 8px;
+}
+
+.icono {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
