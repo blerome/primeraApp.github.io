@@ -6,7 +6,7 @@
   display: flex; /* Para distribuir los elementos correctamente */
   align-items: center;
   justify-content: space-between;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   padding: 0 16px; /* Espaciado interno sin aumentar el tamaño */
   box-sizing: border-box; /* Evita que el padding haga crecer el contenedor */
   overflow: hidden; /* Previene cualquier desbordamiento */
@@ -33,7 +33,7 @@
   width: 100%;
   height: 40px;
   padding-left: 40px;
-  border: 1px solid #aaa;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -58,6 +58,6 @@
 .icono {
   width: 40px;
   height: 40px;
-  background-color: #ccc;
+  background-color: #ffffff;
   border-radius: 5px;
 }
