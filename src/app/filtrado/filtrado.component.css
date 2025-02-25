@@ -1,0 +1,137 @@
+.filtrado-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemi, .itemd {
+    width: 15%;
+    height: 100%;
+}
+
+.itemi {
+    background-color: #b6a12a;
+}
+
+.itemd {
+    background-color: #38418e;
+}
+
+.itemc { 
+    
+    /* Div central */
+    width: 70%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.itemc-content {
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    max-width: 80%;
+    padding: 10px 0;
+
+    /* Ocultar scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.itemc-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* 🎯 Estilos de los botones */
+.filter-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width: 120px;
+    max-width: 120px;
+    transition: transform 0.3s ease;
+}
+
+/* 🎨 Contenedor de la imagen con fondo dinámico */
+.icon-container {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    overflow: hidden;
+}
+
+/* 📌 Imagen dentro del botón */
+.icon-container img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+/* 📌 Texto del botón */
+.filter-button span {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+}
+
+/* 🖱️ Efecto hover */
+.filter-button:hover {
+    transform: scale(1.1);
+    background: lightgray;
+}
+
+/* 📌 Botones de navegación */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+}
+
+.nav-btn svg {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}

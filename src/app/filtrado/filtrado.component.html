@@ -1,0 +1,26 @@
+<div class="filtrado-container">
+    <div class="itemi"></div>
+    <div class="itemc">
+        <button class="nav-btn left-btn" (click)="scrollLeft()">
+            <svg viewBox="0 0 24 24">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <div class="itemc-content" #carousel>
+            <button class="filter-button" *ngFor="let subject of subjects" (click)="filterSubject(subject.name)">
+                <div class="icon-container" [ngStyle]="{'background-color': subject.bgColor}">
+                    <img [src]="subject.icon" alt="{{ subject.name }}">
+                </div>
+                <span>{{ subject.name }}</span>
+            </button>
+        </div>
+
+        <button class="nav-btn right-btn" (click)="scrollRight()">
+            <svg viewBox="0 0 24 24">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+    <div class="itemd"></div>
+</div>
