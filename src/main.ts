@@ -8,4 +8,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 
 bootstrapApplication(AppComponent, {providers: [provideProtractorTestingSupport(), provideAnimationsAsync()]}).catch((err) =>
   console.error(err),
+                                                                                                                     
+/*hola estoy comentando */                                                                                                                     
+                                                                                                                     
 );
